@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.blocky">
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.Blocky"
+        tools:targetApi="31">
+        <activity
+            android:name="com.example.blocky.Tracking"
+            android:exported="false"
+            android:label="@string/tracking" />
+        <activity
+            android:name="com.example.blocky.Pictures"
+            android:exported="false"
+            android:label="@string/pictures" />
+        <activity
+            android:name="com.example.blocky.Multiplication"
+            android:exported="false"
+            android:label="@string/multiplication" />
+        <activity
+            android:name="com.example.blocky.Spelling"
+            android:exported="false"
+            android:label="@string/spelling" />
+        <activity
+            android:name="com.example.blocky.Directions"
+            android:exported="false"
+            android:label="@string/directions" />
+        <activity
+            android:name="com.example.blocky.Digits"
+            android:exported="false"
+            android:label="@string/digits" />
+        <activity
+            android:name="com.example.blocky.Months"
+            android:exported="false"
+            android:label="@string/months" />
+        <activity
+            android:name="com.example.blocky.Days"
+            android:exported="false"
+            android:label="@string/days" />
+        <activity
+            android:name="com.example.blocky.Seasons"
+            android:exported="false"
+            android:label="@string/seasons" />
+        <activity
+            android:name="com.example.blocky.DigitalClock"
+            android:exported="false"
+            android:label="@string/digital_clock" />
+        <activity
+            android:name="com.example.blocky.AnalogClock"
+            android:exported="false"
+            android:label="@string/analog_clock" />
+        <activity
+            android:name="com.example.blocky.Home"
+            android:exported="false" />
+        <activity
+            android:name="com.example.blocky.MainActivity"
+            android:exported="true"
+            android:theme="@style/Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Home">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/modeSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:minHeight="48dp"
+            android:text="@string/learn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/modeSwitch">
+
+            <Button
+                android:id="@+id/aClockButton"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="16dp"
+                android:onClick="analogClock"
+                android:text="@string/analog_clock"
+                tools:ignore="TextContrastCheck,UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/dClockButton"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="16dp"
+                android:onClick="digitalClock"
+                android:text="@string/digital_clock"
+                tools:ignore="TextContrastCheck,UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/seasonButton"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="16dp"
+                android:onClick="seasons"
+                android:text="@string/seasons"
+                tools:ignore="TextContrastCheck,UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/daysButton"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="16dp"
+                android:onClick="days"
+                android:text="@string/days"
+                tools:ignore="TextContrastCheck,UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/monthsButton"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="16dp"
+                android:onClick="months"
+                android:text="@string/months"
+                tools:ignore="TextContrastCheck,UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/digitsButton"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="16dp"
+                android:onClick="digits"
+                android:text="@string/digits"
+                tools:ignore="TextContrastCheck,UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/spellingButton"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="16dp"
+                android:onClick="spelling"
+                android:text="@string/spelling"
+                tools:ignore="TextContrastCheck,UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/directionsButton"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="16dp"
+                android:onClick="directions"
+                android:text="@string/directions"
+                tools:ignore="TextContrastCheck,UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/multiplicationButton"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="16dp"
+                android:onClick="multiplication"
+                android:text="@string/multiplication"
+                tools:ignore="TextContrastCheck,UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/picturesButton"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="16dp"
+                android:onClick="pictures"
+                android:text="@string/pictures"
+                tools:ignore="TextContrastCheck,UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/trackingButton"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="16dp"
+                android:onClick="tracking"
+                android:text="@string/tracking"
+                tools:ignore="TextContrastCheck,UsingOnClickInXml" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

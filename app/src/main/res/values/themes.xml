@@ -1,0 +1,21 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.Blocky" parent="Theme.MaterialComponents.DayNight">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/primaryDark</item>
+        <!-- Customize your theme here. -->
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColor">@color/primaryDark</item>
+        <item name="colorControlActivated">@color/primary</item>
+    </style>
+
+    <style name="Main" parent="Theme.Blocky">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:colorBackground">@color/primary</item>
+        <item name="colorControlActivated">@color/primaryDark</item>
+    </style>
+</resources>
